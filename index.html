@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shreekrishna Repair & Services — Appliance Repair in Kathmandu</title>
+  <meta name="description"
+    content="Comprehensive repair & maintenance for washing machines, ACs, fridges, ovens in Kathmandu.">
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar bg-dark text-white py-1">
+    <div class="container d-flex justify-content-between small">
+      <div><i class="fa fa-map-marker-alt me-1"></i> Chabahil, Kathmandu</div>
+      <div><i class="fa fa-phone me-1"></i> (+977) 9767990237 &nbsp; | &nbsp; contact@shreekrishnatrade.com</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="img/logo.png" alt="ShreekrishnaTrade" width="58" height="58" class="me-2">
+        <span class="fw-bold">Shree krishna Trade</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="ms-3 d-flex gap-2">
+          <button id="openRegister" class="btn btn-outline-primary btn-sm">Register</button>
+          <button id="openLogin" class="btn btn-primary btn-sm">Client Login</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5">Fast & Reliable Appliance Repair in Kathmandu</h1>
+          <p class="lead">We specialize in washing machine repairs, AC servicing, fridge & oven maintenance — genuine
+            parts, transparent pricing, and membership discounts.</p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#contact" class="btn btn-primary btn-lg">Request Service</a>
+            <button id="joinNow" class="btn btn-primary btn-lg">Become Member</button>
+          </div>
+
+          <div class="mt-4">
+            <span class="badge bg-success me-2">Priority for Members</span>
+            <span class="text-muted">Emergency repairs | On-site or pickup service</span>
+          </div>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="img/profile-pic.png" alt="appliance repair" class="img-fluid hero-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICE CARDS similar to TechnicalSewa sections -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card p-4 h-100">
+            <div class="icon mb-3"><i class="fad fa-washer"
+                style="--fa-primary-color: #0091ff; --fa-secondary-color: #0091ff;"></i></div>
+            <h5>Washing Machine Repair</h5>
+            <p class="small text-muted">Front load & top load, motor, drum, control panel repairs.</p>
+            <a href="#contact" class="small fw-semibold">Request repair →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card p-4 h-100">
+            <div class="icon mb-3"><i class="fa-solid fa-snowflake fa-2x text-primary"></i></div>
+            <h5>AC Service & Installation</h5>
+            <p class="small text-muted">Gas refill, compressor checks, split/window AC servicing.</p>
+            <a href="#contact" class="small fw-semibold">Book service →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card p-4 h-100">
+            <div class="icon mb-3"><i class="fa-solid fa-temperature-three-quarters fa-2x text-primary"></i></div>
+            <h5>Fridge Repair</h5>
+            <p class="small text-muted">Compressor, thermostat, cooling issues, and seals.</p>
+            <a href="#contact" class="small fw-semibold">Get help →</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="service-card p-4 h-100">
+            <div class="icon mb-3"><i class="fa-solid fa-fire-burner fa-2x text-primary"></i></div>
+            <h5>Oven & Microwave</h5>
+            <p class="small text-muted">Heating element replacement, door seals, electronic faults.</p>
+            <a href="#contact" class="small fw-semibold">Schedule →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US + CTA -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h3>Why Shreekrishna?</h3>
+          <ul class="list-unstyled">
+            <li><i class="fa fa-check text-success me-2"></i>Certified technicians</li>
+            <li><i class="fa fa-check text-success me-2"></i>Genuine spare parts</li>
+            <li><i class="fa fa-check text-success me-2"></i>Transparent pricing</li>
+            <li><i class="fa fa-check text-success me-2"></i>Membership discounts and priority booking</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center">
+          <div class="card p-3 shadow-sm">
+            <div class="card-body">
+              <h5>Phone</h5>
+              <p class="mb-1">(+977) 9767990237</p>
+              <p class="small text-muted mb-0">Call us for fast diagnosis and booking</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / GALLERY -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>Recent Projects</h3>
+        <a href="#projects" class="small">See all projects</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 project-card">
+            <img src="img/project1.jpeg" alt="Project 1" class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Samsung Washing Machine Repair</h6>
+              <p class="small text-muted mb-0">Motor replacement & testing — Kirtipur</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 project-card">
+            <img src="img/project2.jpeg" alt="Project 2" class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">Whirlpool top load washing machine </h6>
+              <p class="small text-muted mb-0">Servicing — completed in Boudhaa</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 project-card">
+            <img src="img/project3.jpeg" alt="Project 3" class="card-img-top">
+            <div class="card-body">
+              <h6 class="card-title">LG Washing Machine</h6>
+              <p class="small text-muted mb-0">Minor glitch with major repair — completed in Thamel</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEMBERSHIP / PRICING -->
+  <section id="pricing" class="py-5 bg-gradient-membership text-white">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3>Membership Plans</h3>
+        <p class="mb-0">Save on every repair. Choose a plan that fits your needs.</p>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h5>Basic</h5>
+              <p class="display-6 mb-0">5% <small>off</small></p>
+              <p class="small text-muted">Online booking & priority scheduling</p>
+              <button class="btn btn-light text-primary" data-plan="basic" id="joinBasic">Join</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3 border-primary">
+            <div class="card-body">
+              <h5>Silver</h5>
+              <p class="display-6 mb-0">10% <small>off</small></p>
+              <p class="small text-muted">Annual preventive checkup</p>
+              <button class="btn btn-light text-primary" data-plan="silver" id="joinSilver">Join</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 text-center p-3">
+            <div class="card-body">
+              <h5>Gold</h5>
+              <p class="display-6 mb-0">15% <small>off</small></p>
+              <p class="small text-muted">Emergency priority + 2 preventive visits</p>
+              <button class="btn btn-light text-primary" data-plan="gold" id="joinGold">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="request-service" class="request-service">
+    <div class="service-container">
+      <h2>🛠️ Need a Service?</h2>
+      <p>Click below to request a service for your appliance.</p>
+      <button id="openServiceForm" class="btn-request">📩 Request a Service</button>
+    </div>
+  </section>
+
+  <!-- Popup Modal -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h2>Request a Service</h2>
+      <form class="service-form">
+        <div class="form-group">
+          <label for="name">👤 Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">📧 Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">📞 Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="+977-98XXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label for="address">📍 Address</label>
+          <input type="text" id="address" name="address" placeholder="e.g. Chabahil, Kathmandu" required>
+        </div>
+        <div class="form-group">
+          <label for="service">🔧 Service Type</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="repair">Repair</option>
+            <option value="installation">Installation</option>
+            <option value="maintenance">Maintenance</option>
+            <option value="consultation">Consultation</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="reqDate">📅 Preferred Date & Time</label>
+          <input type="datetime-local" id="reqDate" name="reqDate" required>
+        </div>
+        <div class="form-group">
+          <label for="message">📝 Details</label>
+          <textarea id="message" name="message" rows="3" placeholder="Describe your issue..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">📨 Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Visit Us Section -->
+  <section class="visit-us">
+    <h2>Visit Us</h2>
+    <p>Krishana Electronic Service Center<br>Chabahil, Kumarigal, Kathmandu 44600</p>
+
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3990801102027!2d85.35098957615062!3d27.7085654258041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a3a91ff3b%3A0xe7d23da4ffebf97f!2sKrishana%20Electronic%20Service%20Center%20-%20Chabahil!5e0!3m2!1sen!2snp!4v1736099600000!5m2!1sen!2snp"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <a href="https://maps.app.goo.gl/4aw4cefbQjovoh4g8" target="_blank" class="btn btn-primary mt-3">
+      📍 Get Directions
+    </a>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="py-5 bg-dark text-white border-top border-secondary position-relative">
+    <div class="container">
+      <div class="row g-4 justify-content-between">
+
+        <!-- Box 1: Location & Map -->
+        <div class="col-lg-4 col-md-6">
+          <h5 class="fw-bold text-primary mb-3">📍 Location</h5>
+          <p class="small text-white-50 mb-3">
+            Krishana Electronic Service Center<br>
+            Chabahil, Kumarigal, Kathmandu 44600
+          </p>
+          <div class="rounded overflow-hidden shadow-sm border border-secondary" style="height: 160px;">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3990801102027!2d85.35098957615062!3d27.7085654258041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199a3a91ff3b%3A0xe7d23da4ffebf97f!2sKrishana%20Electronic%20Service%20Center%20-%20Chabahil!5e0!3m2!1sen!2snp!4v1736099600000!5m2!1sen!2snp"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Box 2: Services -->
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold text-primary mb-3">🛠️ Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none service-link">AC Repair</a>
+            </li>
+            <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none service-link">Fridge
+                Repair</a></li>
+            <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none service-link">Oven Repair</a>
+            </li>
+            <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none service-link">Washing
+                Machine</a></li>
+          </ul>
+        </div>
+
+        <!-- Box 3: Contact -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold text-primary mb-3">📞 Contact</h5>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <a href="tel:+9779767990237" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="bg-primary rounded-circle p-2 me-2 d-flex align-items-center justify-content-center"
+                  style="width:32px;height:32px;"><i class="fas fa-phone-alt small"></i></span>
+                (+977) 976 799 0237
+              </a>
+            </li>
+            <li class="mb-3">
+              <a href="mailto:contact@shreekrishnatrade.com"
+                class="text-white text-decoration-none d-flex align-items-center">
+                <span
+                  class="bg-warning text-dark rounded-circle p-2 me-2 d-flex align-items-center justify-content-center"
+                  style="width:32px;height:32px;"><i class="fas fa-envelope small"></i></span>
+                contact@shreekrishnatrade.com
+              </a>
+            </li>
+          </ul>
+
+          <h6 class="fw-bold text-primary mt-4 mb-3">🔗 Social Links</h6>
+          <div class="d-flex gap-3">
+            <a href="https://www.facebook.com/kris.mahato.2025/" target="_blank" class="social-btn facebook"><i
+                class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/9779767990237" target="_blank" class="social-btn whatsapp"><i
+                class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Box 4: Legal -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold text-primary mb-3">⚖️ Legal</h5>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none">Terms & Conditions</a></li>
+            <li class="mb-2"><span class="text-muted">© Trademark 2026</span></li>
+          </ul>
+          <div class="mt-3 p-3 bg-secondary bg-opacity-10 rounded border border-secondary">
+            <small class="text-white-50 fst-italic">"Quality service you can trust."</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary mt-5 pt-4 text-center">
+        <p class="mb-0 text-white-50 small">&copy; 2026 Shree Krishna Services™. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- REGISTER / LOGIN MODALS -->
+  <div class="modal fade" id="modalRegister" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Create Account</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="mb-3"><label class="form-label">Full name</label><input id="regName" class="form-control"
+                required></div>
+            <div class="mb-3"><label class="form-label">Email</label><input id="regEmail" class="form-control"
+                type="email" required></div>
+            <div class="mb-3"><label class="form-label">Phone</label><input id="regPhone" class="form-control" required>
+            </div>
+            <div class="mb-3"><label class="form-label">Membership Plan</label>
+              <select id="regPlan" class="form-select">
+                <option value="none">No membership</option>
+                <option value="basic">Basic - 5%</option>
+                <option value="silver">Silver - 10%</option>
+                <option value="gold">Gold - 15%</option>
+              </select>
+            </div>
+            <div class="mb-3"><label class="form-label">Password</label><input id="regPassword" type="password"
+                class="form-control" required></div>
+            <button class="btn btn-primary w-100" type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLIENT DASHBOARD MODAL -->
+  <div class="modal fade" id="modalClientDashboard" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title"><i class="fas fa-user-circle me-2"></i>My Dashboard</h5>
+          <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <!-- Profile Info -->
+            <div class="col-md-4 border-end">
+              <div class="text-center mb-3">
+                <img src="img/profile-pic.png" onerror="this.src='https://via.placeholder.com/100'"
+                  class="rounded-circle mb-2" width="80">
+                <h5 id="dashName" class="fw-bold">Client Name</h5>
+                <span id="dashPlan" class="badge bg-warning text-dark">Gold Member</span>
+              </div>
+              <ul class="list-group list-group-flush small">
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fas fa-envelope me-2 text-muted"></i>Email</span>
+                  <span id="dashEmail" class="text-truncate" style="max-width: 120px;">-</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span><i class="fas fa-phone me-2 text-muted"></i>Phone</span>
+                  <span id="dashPhone">-</span>
+                </li>
+              </ul>
+              <div class="d-grid gap-2 mt-3">
+                <button id="logoutClient" class="btn btn-outline-danger btn-sm">Logout</button>
+              </div>
+            </div>
+
+            <!-- History & Stats -->
+            <div class="col-md-8">
+              <h6 class="fw-bold border-bottom pb-2">Service History</h6>
+              <div class="overflow-auto" style="max-height: 300px;" id="dashHistory">
+                <!-- JS populated -->
+                <p class="text-muted small">No service history found.</p>
+              </div>
+
+              <div class="mt-3 p-3 bg-light rounded" id="dashDiscountBox">
+                <h6 class="mb-1 text-primary">Your Membership Benefit</h6>
+                <p class="small mb-0">You get <strong id="dashDiscountVal">0%</strong> OFF on all labor charges!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Client Login</h5><button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="mb-3"><label class="form-label">Email</label><input id="loginEmail" type="email"
+                class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Password</label><input id="loginPassword" type="password"
+                class="form-control" required></div>
+            <button class="btn btn-primary w-100" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING BUTTONS -->
+  <div class="floating-container">
+    <button id="themeToggle" class="float-btn btn-theme" title="Toggle Theme"><i class="fas fa-moon"></i></button>
+    <a href="https://wa.me/9779767990237" target="_blank" class="float-btn btn-whatsapp" title="WhatsApp Us"><i
+        class="fab fa-whatsapp"></i></a>
+    <a href="tel:+9779767990237" class="float-btn btn-call" title="Call Now"><i class="fas fa-phone"></i></a>
+    <button id="scrollToTop" class="float-btn btn-scroll-top" title="Scroll to Top"><i
+        class="fas fa-arrow-up"></i></button>
+    <button id="chatbotToggle" class="float-btn btn-primary" title="Chat with us"><i
+        class="fas fa-comments"></i></button>
+  </div>
+
+  <!-- CHATBOT WIDGET -->
+  <div id="chatbotWidget" class="chatbot-container">
+    <div class="chatbot-header" id="chatbotHeader">
+      <span><i class="fas fa-robot me-2"></i> Support Assistant</span>
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="chatbot-body" id="chatbotBody">
+      <div class="bot-msg">Namaste! How can I help you today?</div>
+      <!-- Chat log -->
+    </div>
+    <div class="chatbot-options p-2" id="chatbotOptions">
+      <!-- Dynamic options -->
+    </div>
+  </div>
+
+  <!-- FESTIVAL OFFER BANNER (Injected via JS) -->
+  <div id="offerBannerContainer"></div>
+
+  <!-- CLIENT PROJECT MODAL -->
+  <div class="modal fade" id="modalClientProject" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clientProjTitle">Project Name</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img id="clientProjImg" src="" class="img-fluid rounded mb-3" style="max-height: 300px; object-fit: cover;">
+          <p id="clientProjDesc" class="text-start text-muted">Description...</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#contact" class="btn btn-primary"
+            onclick="new bootstrap.Modal(document.getElementById('modalClientProject')).hide()">Book Similar Service</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

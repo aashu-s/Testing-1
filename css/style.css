@@ -1,0 +1,538 @@
+/* Basic reset and fonts */
+:root {
+  --brand: #6da4f8;
+  --muted: #6c757d
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  color: #222;
+  margin: 0
+}
+
+img {
+  max-width: 100%;
+  height: auto
+}
+
+.topbar {
+  font-size: 0.9rem
+}
+
+.navbar-brand img {
+  border-radius: 6px
+}
+
+.navbar .btn {
+  border-radius: 6px
+}
+
+/* Hero */
+.hero-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #a6c9ff 0%, #1455e6 100%);
+  color: #fff
+}
+
+.hero-section .hero-img {
+  max-width: 380px
+}
+
+/* Service cards */
+.service-card {
+  border-radius: 12px;
+  border: 1px solid #eef3ff;
+  background: #fff
+}
+
+.service-card .icon {
+  color: var(--brand)
+}
+
+/* Projects */
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px
+}
+
+/* Membership gradient */
+.bg-gradient-membership {
+  background: linear-gradient(135deg, #a6c9ff 0%, #1455e6 100%);
+}
+
+.request-service {
+  padding: 4rem 8%;
+  background: linear-gradient(135deg, #a6c9ff 0%, #1455e6 100%);
+  /* red-pink gradient */
+  color: #fff;
+  text-align: center;
+}
+
+/*Reques a service */
+/* Section */
+.request-service {
+  padding: 3rem 8%;
+  background: linear-gradient(135deg, #ffc3c3, #ff7979);
+  color: #fff;
+  text-align: left;
+}
+
+.request-service h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.request-service p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.btn-request {
+  background: #fff;
+  color: #ff416c;
+  font-size: 1.1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+
+.btn-request:hover {
+  background: #f1f1f1;
+  transform: translateY(-2px);
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: left;
+  align-items: left;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.close:hover {
+  color: #ff416c;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  background: #ff416c;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.btn-submit:hover {
+  background: #ff4b2b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Footer */
+footer {
+  font-size: 0.95rem
+}
+
+/* Responsive tweaks */
+@media(max-width:767px) {
+  .hero-section {
+    padding: 40px 0
+  }
+}
+
+/* Visit Us Section */
+.visit-us {
+  padding: 4rem 8%;
+  text-align: right;
+  background: #f9f9f9;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1 / 1;
+  /* keeps square */
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.visit-us a.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* =========================================
+   NEW UI ENHANCEMENTS & ADMIN STYLES
+   ========================================= */
+
+/* --- DARK MODE --- */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.dark-mode .navbar,
+body.dark-mode .bg-white,
+body.dark-mode .card,
+body.dark-mode .modal-content,
+body.dark-mode .service-card,
+body.dark-mode .accordion-item {
+  background-color: #2c2c2c !important;
+  color: #f0f0f0;
+  border-color: #444;
+}
+
+body.dark-mode .text-muted {
+  color: #aaa !important;
+}
+
+body.dark-mode .table {
+  color: #f0f0f0;
+}
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+body.dark-mode .topbar {
+  background-color: #000 !important;
+}
+
+body.dark-mode .bg-light {
+  background-color: #121212 !important;
+}
+
+/* --- FLOATING BUTTONS --- */
+.floating-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 9999;
+}
+
+.float-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+  cursor: pointer;
+  border: none;
+}
+
+.float-btn:hover {
+  transform: scale(1.1);
+  color: white;
+}
+
+.btn-whatsapp {
+  background-color: #25d366;
+}
+
+.btn-call {
+  background-color: #007bff;
+}
+
+.btn-scroll-top {
+  background-color: #333;
+  opacity: 0.7;
+  display: none;
+}
+
+.btn-theme {
+  background-color: #6610f2;
+}
+
+/* --- CHATBOT WIDGET --- */
+.chatbot-container {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 10000;
+  border: 1px solid #ddd;
+}
+
+.chatbot-header {
+  background: var(--brand);
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.chatbot-body {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.bot-msg,
+.user-msg {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  max-width: 80%;
+}
+
+.bot-msg {
+  background: #e9ecef;
+  color: #333;
+  margin-right: auto;
+}
+
+.user-msg {
+  background: var(--brand);
+  color: white;
+  margin-left: auto;
+}
+
+.chatbot-options button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.chatbot-options button:hover {
+  background: #f0f0f0;
+}
+
+body.dark-mode .chatbot-container {
+  background: #333;
+  border-color: #555;
+}
+
+body.dark-mode .chatbot-body {
+  background: #222;
+}
+
+body.dark-mode .bot-msg {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-mode .chatbot-options button {
+  border-color: #555;
+  color: #fff;
+}
+
+body.dark-mode .chatbot-options button:hover {
+  background: #444;
+}
+
+/* --- FESTIVAL OFFER BANNER --- */
+.offer-banner {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  display: none;
+  /* hidden by default */
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* --- ADMIN PANEL SPECIFIC --- */
+.admin-sidebar {
+  min-height: 100vh;
+  background: #343a40;
+  color: white;
+}
+
+.admin-sidebar .nav-link {
+  color: #ccc;
+}
+
+.admin-sidebar .nav-link.active {
+  color: white;
+  background: #495057;
+}
+
+.dashboard-stat-card {
+  border-left: 5px solid var(--brand);
+}
+
+.status-badge-pending {
+  background: #ffc107;
+  color: #000;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+.status-badge-progress {
+  background: #17a2b8;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+
+/* --- FOOTER STYLES --- */
+.service-link:hover {
+  color: #fff !important;
+  padding-left: 5px;
+  transition: 0.3s;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+}
+
+.social-btn.facebook:hover {
+  background: #1877F2;
+}
+
+.social-btn.whatsapp:hover {
+  background: #25D366;
+}
+
+/* Sticky Navbar fix if needed */
+.navbar {
+  transition: 0.3s;
+}
+
+/* Ensure dark mode text visibility updates */
+body.dark-mode .text-white-50 {
+  color: #ccc !important;
+}
+
+body.dark-mode footer {
+  background-color: #000 !important;
+}
